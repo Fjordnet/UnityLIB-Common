@@ -12,7 +12,7 @@ namespace Fjord.Common.Extensions
         {
             Ray ray = pointerEventData.pressEventCamera.ScreenPointToRay(pointerEventData.pointerPressRaycast.screenPosition);
             Vector3 worldPosition = ray.GetPoint(
-                pointerEventData.pointerPressRaycast.distance - pointerEventData.pressEventCamera.nearClipPlane);
+                pointerEventData.pointerPressRaycast.distance);
             return worldPosition;
         }
 
@@ -23,7 +23,7 @@ namespace Fjord.Common.Extensions
         {
             Ray ray = pointerEventData.enterEventCamera.ScreenPointToRay(pointerEventData.pointerCurrentRaycast.screenPosition);
             Vector3 worldPosition = ray.GetPoint(
-                pointerEventData.pointerCurrentRaycast.distance - pointerEventData.enterEventCamera.nearClipPlane);
+                pointerEventData.pointerCurrentRaycast.distance);
             return worldPosition;
         }
 
