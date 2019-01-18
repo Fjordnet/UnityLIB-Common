@@ -1,0 +1,4 @@
+<map id="Fjord.Common.Services.ExternalConfiguration" name="Fjord.Common.Services.ExternalConfiguration">
+<area shape="rect" id="node1" title="Allows access to variables set in external configuration. Any value which ends in _ip will be tested ..." alt="" coords="5,80,217,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="56,5,167,32"/>
+</map>

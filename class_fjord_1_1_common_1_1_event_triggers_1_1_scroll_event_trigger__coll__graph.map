@@ -1,0 +1,5 @@
+<map id="Fjord.Common.EventTriggers.ScrollEventTrigger" name="Fjord.Common.EventTriggers.ScrollEventTrigger">
+<area shape="rect" id="node1" title="Captures mouse scroll and forwards a scaled value." alt="" coords="29,80,223,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="140,5,243,32"/>
+</map>

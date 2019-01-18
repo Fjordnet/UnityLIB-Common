@@ -1,0 +1,5 @@
+<map id="Fjord.Common.Services.ExternalConfiguration" name="Fjord.Common.Services.ExternalConfiguration">
+<area shape="rect" id="node1" title="Allows access to variables set in external configuration. Any value which ends in _ip will be tested ..." alt="" coords="48,109,260,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,116,39"/>
+<area shape="rect" id="node3" href="$class_fjord_1_1_common_1_1_types_1_1_serializable_dictionary.html" title="Encapsulates a Dictionary&#45;like data structure that can be passed to JsonUtility.ToJson" alt="" coords="140,5,357,47"/>
+</map>

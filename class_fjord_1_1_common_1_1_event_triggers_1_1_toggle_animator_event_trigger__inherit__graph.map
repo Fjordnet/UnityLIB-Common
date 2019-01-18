@@ -1,0 +1,6 @@
+<map id="Fjord.Common.EventTriggers.ToggleAnimatorEventTrigger" name="Fjord.Common.EventTriggers.ToggleAnimatorEventTrigger">
+<area shape="rect" id="node1" title="Fires the standard Normal, Highlighted, Pressed, Disabled triggers on an animator that a UI Toggle wo..." alt="" coords="115,80,308,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="141,5,282,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="306,5,439,32"/>
+</map>
