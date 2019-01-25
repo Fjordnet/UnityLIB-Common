@@ -14,6 +14,7 @@ namespace Fjord.Common.Services
         public static void Instantiate(IEnumerator co)
         {
             GameObject surrogate = new GameObject("CoroutineSurrogate");
+            DontDestroyOnLoad(surrogate);
             CoroutineSurrogate script = surrogate.AddComponent<CoroutineSurrogate>();
             script.Iterator = co;
             script.RunCoroutine();
