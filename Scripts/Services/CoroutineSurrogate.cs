@@ -9,26 +9,18 @@ namespace Fjord.Common.Services
     /// </summary>
     public class CoroutineSurrogate : MonoBehaviour
     {
-        public IEnumerator Iterator;
+        private static CoroutineSurrogate activeSurrogate = null;
 
-        public static void Instantiate(IEnumerator co)
+        public static void Run(IEnumerator co)
         {
-            GameObject surrogate = new GameObject("CoroutineSurrogate");
-            DontDestroyOnLoad(surrogate);
-            CoroutineSurrogate script = surrogate.AddComponent<CoroutineSurrogate>();
-            script.Iterator = co;
-            script.RunCoroutine();
-        }
-
-        public void RunCoroutine()
-        {
-            StartCoroutine(RunCoroutineCo());
-        }
-
-        IEnumerator RunCoroutineCo()
-        {
-            yield return StartCoroutine(Iterator);
-            Destroy(gameObject);
+            GameObject surrogateObj = null;
+            if (null == activeSurrogate)
+            {
+                surrogateObj = new GameObject("CoroutineSurrogate");
+                DontDestroyOnLoad(surrogateObj);
+                activeSurrogate = surrogateObj.AddComponent<CoroutineSurrogate>();
+            }
+            activeSurrogate.StartCoroutine(co);
         }
     }
 }
