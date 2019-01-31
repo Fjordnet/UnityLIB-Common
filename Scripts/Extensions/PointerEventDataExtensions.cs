@@ -6,7 +6,7 @@ namespace Fjord.Common.Extensions
     public static class PointerEventdataExtensions
     {
         /// <summary>
-        /// Gets world position of pointer when pressed. Exists because pointerEventData.pointPressRaycast.worldPosition seems to not work.
+        /// Gets world position of pointer when pressed. Exists because pointerEventData.pointPressRaycast.worldPosition only works on a PhysicsCollider.
         /// </summary>
         public static Vector3 PointerPressWorldPosition(this PointerEventData pointerEventData)
         {
@@ -17,11 +17,11 @@ namespace Fjord.Common.Extensions
         }
 
         /// <summary>
-        /// Gets world position of current pointer. Exists because pointerEventData.pointerCurrentRaycast.worldPosition seems to not work.
+        /// Gets world position of current pointer. Exists because pointerEventData.pointerCurrentRaycast.worldPosition only works on a PhysicsCollider.
         /// </summary>
         public static Vector3 PointerCurrentWorldPosition(this PointerEventData pointerEventData)
         {
-            Ray ray = pointerEventData.enterEventCamera.ScreenPointToRay(pointerEventData.pointerCurrentRaycast.screenPosition);
+            Ray ray = pointerEventData.pressEventCamera.ScreenPointToRay(pointerEventData.pointerCurrentRaycast.screenPosition);
             Vector3 worldPosition = ray.GetPoint(
                 pointerEventData.pointerCurrentRaycast.distance);
             return worldPosition;
