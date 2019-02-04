@@ -11,7 +11,7 @@ namespace Fjord.Common.Services
     {
         private static CoroutineSurrogate activeSurrogate = null;
 
-        public static void Run(IEnumerator co)
+        public static Coroutine Run(IEnumerator co)
         {
             GameObject surrogateObj = null;
             if (null == activeSurrogate)
@@ -20,7 +20,7 @@ namespace Fjord.Common.Services
                 DontDestroyOnLoad(surrogateObj);
                 activeSurrogate = surrogateObj.AddComponent<CoroutineSurrogate>();
             }
-            activeSurrogate.StartCoroutine(co);
+            return activeSurrogate.StartCoroutine(co);
         }
     }
 }
