@@ -21,7 +21,7 @@ namespace Fjord.Common.Extensions
         /// </summary>
         public static Vector3 PointerCurrentWorldPosition(this PointerEventData pointerEventData)
         {
-            Ray ray = pointerEventData.pressEventCamera.ScreenPointToRay(pointerEventData.pointerCurrentRaycast.screenPosition);
+            Ray ray = pointerEventData.enterEventCamera.ScreenPointToRay(pointerEventData.pointerCurrentRaycast.screenPosition);
             Vector3 worldPosition = ray.GetPoint(
                 pointerEventData.pointerCurrentRaycast.distance);
             return worldPosition;
