@@ -5,9 +5,7 @@ using Fjord.Common.Types;
 namespace Fjord.Common.Services
 {
     /// <summary>
-    /// The purpose of this class is to:
-    /// 1) Provide a convenient means of fetching deserialized server data
-    /// 2) Provide an application-side cache of server data
+    /// The purpose of this class is to provide an application-side cache of server data
     /// </summary>
     public class DataCache
     {
