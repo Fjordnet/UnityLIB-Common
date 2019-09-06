@@ -42,7 +42,9 @@ namespace Fjord.Common.Events
         {
             if (DoLogging)
             {
-                Debug.Log("Dispatching event: " + eventName + " " + eventArg.ToString() + " for sender: " + sender.ToString());
+                string eventArgString = eventArg == null ? "(null)" : eventArg.ToString();
+                string senderString = sender == null ? "(null)" : sender.ToString();
+                Debug.Log("Dispatching event: " + eventName + " " + eventArgString + " for sender: " + senderString);
             }
 
             if (eventMap.ContainsKey(eventName))
