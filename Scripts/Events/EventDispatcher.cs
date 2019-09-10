@@ -18,11 +18,6 @@ namespace Fjord.Common.Events
         [SerializeField]
         private Dictionary<string, StandardEvent> eventMap = new Dictionary<string, StandardEvent>();
 
-        protected override void Awake()
-        {
-            _dontDestroyOnLoad = true;
-            base.Awake();
-        }
 
         public void RegisterListener(string eventName, UnityAction<object, object> callback)
         {
