@@ -145,6 +145,21 @@ namespace Fjord.Common.Services
         }
 
         /// <summary>
+        /// Returns a specific DataEntry with type type and ID id.
+        /// </summary>
+        /// <param name="type">The type name of the data to return.</param>
+        /// <param name="id">The ID of the specific DataEntry.</param>
+        public DataEntry GetData(string type, string id)
+        {
+            if (_cacheEntries.ContainsKey(type))
+            {
+                return _cacheEntries[type].Find(id);
+            }
+
+            return null;
+        }
+
+        /// <summary>
         /// Returns all data of the specified type.
         /// </summary>
         /// <typeparam name="T">The type of data to return.</typeparam>
