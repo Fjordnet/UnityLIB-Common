@@ -33,10 +33,6 @@ namespace Fjord.Common.Events
             if (eventMap.ContainsKey(eventName))
             {
                 eventMap[eventName].RemoveListener(callback);
-                if(eventMap[eventName].GetPersistentEventCount() == 0)
-                {
-                    eventMap.Remove(eventName);
-                }
             }
         }
         public void Dispatch(string eventName, object sender, object eventArg)
