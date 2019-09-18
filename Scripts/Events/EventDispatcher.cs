@@ -18,6 +18,7 @@ namespace Fjord.Common.Events
         [SerializeField]
         private Dictionary<string, StandardEvent> eventMap = new Dictionary<string, StandardEvent>();
 
+
         public void RegisterListener(string eventName, UnityAction<object, object> callback)
         {
             if (!eventMap.ContainsKey(eventName))
@@ -32,10 +33,6 @@ namespace Fjord.Common.Events
             if (eventMap.ContainsKey(eventName))
             {
                 eventMap[eventName].RemoveListener(callback);
-                if(eventMap[eventName].GetPersistentEventCount() == 0)
-                {
-                    eventMap.Remove(eventName);
-                }
             }
         }
         public void Dispatch(string eventName, object sender, object eventArg)
