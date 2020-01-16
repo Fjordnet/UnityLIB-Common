@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Enums
 {
+    /// <summary>
+    /// Helper for common button states.
+    /// </summary>
 	public enum ButtonState
 	{
 		/// <summary>

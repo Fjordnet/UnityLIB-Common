@@ -5,8 +5,11 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
+    /// <summary>
+    /// Custom editor for CustomTagMaskDatum.
+    /// </summary>
     [CustomEditor(typeof(CustomTagMaskDatum))]
     public class CustomTagMaskDatumEditor : Editor
     {

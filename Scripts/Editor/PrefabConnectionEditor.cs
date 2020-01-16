@@ -2,7 +2,7 @@
 using Fjord.Common.Components;
 using UnityEditor;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
     /// <summary>
     /// Custom editor for PrefabConnection.
