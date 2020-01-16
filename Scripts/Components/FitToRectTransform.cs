@@ -5,6 +5,9 @@ using Fjord.Common.Enums;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// Fit a Transform to the bounds of its parent RectTransform.
+    /// </summary>
     public class FitToRectTransform : MonoBehaviour
     {
         [Header("Offset")]

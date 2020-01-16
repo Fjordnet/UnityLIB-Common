@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// Automatically sets a GameObject to active on Awake.
+    /// </summary>
     public class SetActiveOnAwake : MonoBehaviour
     {
         [Header("Will set GameObject to this state in Editor.")]

@@ -6,6 +6,9 @@ using Fjord.Common.Attributes;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// Automatically loads a scene on Start. Loading can be performed synchronously or asynchronously.
+    /// </summary>
 	public class AutoSceneLoad : MonoBehaviour
 	{
 		[ScenePath]

@@ -4,6 +4,9 @@ using UnityEditor;
 
 namespace Fjord.Common
 {
+    /// <summary>
+    /// Custom Editor for FitToRectTransform.
+    /// </summary>
     [CustomEditor(typeof(FitToRectTransform))]
     [CanEditMultipleObjects]
     public class FitToRectTransformEditor : Editor

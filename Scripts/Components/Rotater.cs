@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// Add simple rotation to a GameObject. Rotation along each axis can be individually controlled.
+    /// </summary>
 	public class Rotater : MonoBehaviour
 	{	
 		[SerializeField]

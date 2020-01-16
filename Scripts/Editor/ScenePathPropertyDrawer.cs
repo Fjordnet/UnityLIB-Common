@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Fjord.Common.Attributes;
 
-namespace Fjord.Common.Attributes
+namespace Fjord.Common.UnityEditor.PropertyDrawers
 {
+    /// <summary>
+    /// Renders string fields marked with ScenePathAttribute as Scene object fields in the Inspector.
+    /// </summary>
 	[CustomPropertyDrawer(typeof(ScenePathAttribute))]
 	public class ScenePathAttributeDrawer : PropertyDrawer
 	{

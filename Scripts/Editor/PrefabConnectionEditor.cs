@@ -4,6 +4,10 @@ using UnityEditor;
 
 namespace Fjord.Common
 {
+    /// <summary>
+    /// Custom editor for PrefabConnection.
+    /// </summary>
+    [System.Obsolete("Deprecated now that Unity natively includes support for nested prefabs.")]
     [CustomEditor(typeof(PrefabConnection))]
     public class PrefabConnectionEditor : Editor
     {
