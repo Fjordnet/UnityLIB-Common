@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Base class for providing a custom list of string tags.
+    /// </summary>
     public abstract class CustomTagMask 
     {
         [SerializeField]

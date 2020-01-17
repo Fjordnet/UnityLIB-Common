@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Tweens
 {
+    /// <summary>
+    /// Automatically tweens Transform properties with specified settings.
+    /// </summary>
     public class TransformTweener : MonoBehaviour
     {
         [SerializeField]

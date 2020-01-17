@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Concrete parameter type for Fjord.Common.Types.SerializableDictionary.
+    /// </summary>
     [System.Serializable]
     public class SerializableDictionaryElement
     {

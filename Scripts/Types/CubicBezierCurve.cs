@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Data structure to represent Bezier curves.
+    /// </summary>
     public struct CubicBezierSegment
     {
         public readonly Vector3 Start;

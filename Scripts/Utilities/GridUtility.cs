@@ -5,6 +5,9 @@ using Fjord.Common.Types;
 
 namespace Fjord.Common.Utilities
 {
+    /// <summary>
+    /// Utility methods for converting 2D coordinates to 1D array indices.
+    /// </summary>
     static public class GridUtility
     {
         static public Vector2Int GridIndexToCoordinate(int index, int Max)

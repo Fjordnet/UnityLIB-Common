@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Extensions
 {
+    /// <summary>
+    /// Extension methods for the Fjord.Common.Enums.Direction4 enumeration.
+    /// </summary>
     static public class Direction4Extensions
     {
         static public int X(this Direction4 direction4)

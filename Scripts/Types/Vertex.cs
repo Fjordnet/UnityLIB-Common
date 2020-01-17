@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// 3D vertex structure for Fjord.Common.Types.CubicBezierSegment.
+    /// </summary>
 	[System.Serializable]
 	public struct Vertex
 	{

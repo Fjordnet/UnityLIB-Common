@@ -2,6 +2,9 @@
 
 namespace Fjord.Common.Utilities
 {
+    /// <summary>
+    /// Utility methods for UnityEngine.Color.
+    /// </summary>
     public static class ColorUtility
     {
         public static Color MoveTowards(Color a, Color b, float maxAmount)

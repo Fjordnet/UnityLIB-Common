@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Oriented bounding box.
+    /// </summary>
     public class OrientedBounds
     {
         [SerializeField]

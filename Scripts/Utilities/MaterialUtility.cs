@@ -5,6 +5,9 @@ using Fjord.Common.Extensions;
 
 namespace Fjord.Common.Utilities
 {
+    /// <summary>
+    /// Utility methods for UnityEngine.Material.
+    /// </summary>
     public static class MaterialUtility
     {
         public static void SetAlphaAndSwitchShader(Material material, float alpha)

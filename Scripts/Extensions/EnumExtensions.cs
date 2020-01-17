@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Enums
 {
+    /// <summary>
+    /// Extension methods for System.Enum.
+    /// </summary>
     public static class EnumExtensions
     {
         public static bool IsFlagSet<T>(this T value, T flag) where T : struct
