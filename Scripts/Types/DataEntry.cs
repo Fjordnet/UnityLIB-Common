@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Base class for data objects for use with Fjord.Common.Services.DataCache.
+    /// </summary>
     public abstract class DataEntry : IDataEntry
     {
         public virtual string Id { get { return ""; } }

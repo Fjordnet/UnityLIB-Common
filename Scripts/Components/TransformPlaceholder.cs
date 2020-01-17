@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// Enables on-demand assignment of target Transform's world position and rotation to those of this Transform.
+    /// </summary>
     public class TransformPlaceholder : MonoBehaviour
     {
         [SerializeField]

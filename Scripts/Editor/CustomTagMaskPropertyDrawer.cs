@@ -5,8 +5,11 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor.PropertyDrawers
 {
+    /// <summary>
+    /// PropertyDrawer for CustomTagMaskDatum.
+    /// </summary>
     [CustomPropertyDrawer(typeof(CustomTagMask))]
     public abstract class CustomTagMaskPropertyDrawer : PropertyDrawer
     {

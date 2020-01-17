@@ -3,6 +3,9 @@ using UnityEngine.EventSystems;
 
 namespace Fjord.Common.Extensions
 {
+    /// <summary>
+    /// Extension methods for UnityEngine.Transform.
+    /// </summary>
     public static class TransformExtensions
     {
         public static void SetPositionRotationEqualTo(this Transform transform, Transform equalTo)

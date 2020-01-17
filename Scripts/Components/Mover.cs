@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Fjord.Common.Components
 {
 	/// <summary>
-	/// Simply component to add movement to a GameObject every frame.
+	/// Simple component to add movement to a GameObject every frame.
 	/// </summary>
 	public class Mover : MonoBehaviour
 	{

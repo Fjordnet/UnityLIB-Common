@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Tweens
 {
+    /// <summary>
+    /// Utility methods for performing tween logic on Transform properties.
+    /// </summary>
     public static class TransformTweenUtility
     {
         public static Coroutine ToPosition(

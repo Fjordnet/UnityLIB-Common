@@ -2,6 +2,9 @@
 
 namespace Fjord.Common.Utilities
 {
+    /// <summary>
+    /// Utility methods for Vector2.
+    /// </summary>
     public static class Vector2Utility
     {
         public static bool Approximately(Vector2 a, Vector2 b)

@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Tweens
 {
+    /// <summary>
+    /// Utility methods for performing tween logic on Vector3 properties.
+    /// </summary>
 	public static class Vector3TweenUtility
 	{
 		public static IEnumerator ToVector3Coroutine(

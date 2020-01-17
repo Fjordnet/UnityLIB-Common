@@ -5,8 +5,11 @@ using Fjord.Common.Attributes;
 using Fjord.Common.Types;
 using UnityEditorInternal;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor.PropertyDrawers
 {
+    /// <summary>
+    /// PropertyDrawer for TagMask.
+    /// </summary>
     [CustomPropertyDrawer(typeof(TagMask))]
     public class TagMaskPropertyDrawer : PropertyDrawer
     {

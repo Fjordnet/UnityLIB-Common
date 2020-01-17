@@ -5,6 +5,9 @@ using Fjord.Common.Extensions;
 
 namespace Fjord.Common.Components
 {
+    /// <summary>
+    /// On every frame, set one transform's world position to a target transform's world position.
+    /// </summary>
     [ExecuteInEditMode]
     public class BindTransform : MonoBehaviour
     {

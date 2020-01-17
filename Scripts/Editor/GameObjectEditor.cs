@@ -2,8 +2,11 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
+    /// <summary>
+    /// Provides extra methods for creating, editing and manipulating GameObjects.
+    /// </summary>
     public static class GameObjectEditor
     {
         [MenuItem("GameObject/Fjord/Create Transform PlaceHolder", false, 0)]

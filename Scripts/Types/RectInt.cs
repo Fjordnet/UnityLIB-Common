@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// Rect with int fields.
+    /// </summary>
     [System.Serializable]
     public struct RectInt
     {

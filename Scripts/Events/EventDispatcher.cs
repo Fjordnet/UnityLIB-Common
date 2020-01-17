@@ -6,6 +6,9 @@ using Fjord.Common.Components;
 
 namespace Fjord.Common.Events
 {
+    /// <summary>
+    /// Pub/sub event system to provide asynchronous messaging between classes and mitigate hard dependencies.
+    /// </summary>
     public class EventDispatcher : SingletonBehaviour<EventDispatcher>
     {
         /// <summary>

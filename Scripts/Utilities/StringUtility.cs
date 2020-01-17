@@ -2,6 +2,9 @@
 
 namespace Fjord.Common.Utilities
 {
+    /// <summary>
+    /// Utility methods for parsing data to and from strings.
+    /// </summary>
 	public class StringUtility
 	{
 		public static string ParseColor(Color color)

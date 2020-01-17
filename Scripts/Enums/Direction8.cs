@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Enums
 {
+    /// <summary>
+    /// Helper for enumerating directions with four primary values and four secondary values (two dimensions).
+    /// </summary>
     public enum Direction8
     {
         Up = 0,

@@ -2,6 +2,9 @@
 
 namespace Fjord.Common.Types
 {
+    /// <summary>
+    /// A 3-tuple of boolean values.
+    /// </summary>
     [Serializable]
     public struct Bool3
     {

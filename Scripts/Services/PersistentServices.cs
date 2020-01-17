@@ -4,6 +4,12 @@ using UnityEngine;
 
 namespace Fjord.Common.Services
 {
+    /// <summary>
+    /// Provides a single common point of access for all services throughout a project.
+    /// Service behaviors should be added as children to this GameObject and requested
+    /// with PersistentServices.GetService(). This mitigates the need for separate
+    /// singletons for each individual service.
+    /// </summary>
     public class PersistentServices : MonoBehaviour
     {
         [SerializeField]

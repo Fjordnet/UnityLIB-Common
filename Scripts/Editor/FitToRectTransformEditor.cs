@@ -2,8 +2,11 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
+    /// <summary>
+    /// Custom Editor for FitToRectTransform.
+    /// </summary>
     [CustomEditor(typeof(FitToRectTransform))]
     [CanEditMultipleObjects]
     public class FitToRectTransformEditor : Editor

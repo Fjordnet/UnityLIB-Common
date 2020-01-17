@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Fjord.Common.Extensions
 {
+    /// <summary>
+    /// Extension methods for System.AppDomain.
+    /// </summary>
 	public static class AppDomainExtensions
 	{
 		public static System.Type[] GetAllDerivedTypes(this System.AppDomain appDomain, System.Type baseType)

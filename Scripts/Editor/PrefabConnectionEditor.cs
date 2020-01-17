@@ -2,8 +2,12 @@
 using Fjord.Common.Components;
 using UnityEditor;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
+    /// <summary>
+    /// Custom editor for PrefabConnection.
+    /// </summary>
+    [System.Obsolete("Deprecated now that Unity natively includes support for nested prefabs.")]
     [CustomEditor(typeof(PrefabConnection))]
     public class PrefabConnectionEditor : Editor
     {

@@ -3,6 +3,9 @@ using UnityEngine.EventSystems;
 
 namespace Fjord.Common.Extensions
 {
+    /// <summary>
+    /// Extension methods for UnityEngine.EventSystems.PointerEventData.
+    /// </summary>
     public static class PointerEventdataExtensions
     {
         /// <summary>

@@ -2,8 +2,12 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Fjord.Common
+namespace Fjord.Common.UnityEditor
 {
+
+    /// <summary>
+    /// Custom editor for TransformPlaceholder.
+    /// </summary>
     [CustomEditor(typeof(TransformPlaceholder))]
     [CanEditMultipleObjects]
     public class TransformPlaceholderEditor : Editor

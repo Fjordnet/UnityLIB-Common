@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = System.Object;
 
-public static class DictionaryExtensions
+namespace Fjord.Common.Extensions
 {
     /// <summary>
-    /// Gets a value if available, otherwise returns null. Does so without generating
-    /// garbage, TryGetValue generates garbage.
+    /// Extension methods for System.Collections.Generic.Dictionary.
     /// </summary>
-    public static T1 GetValue<T0, T1>(this Dictionary<T0, T1> dictionary, T0 key)
+    public static class DictionaryExtensions
     {
-        if (dictionary.ContainsKey(key))
+        /// <summary>
+        /// Gets a value if available, otherwise returns null. Does so without generating
+        /// garbage, TryGetValue generates garbage.
+        /// </summary>
+        public static T1 GetValue<T0, T1>(this Dictionary<T0, T1> dictionary, T0 key)
         {
-            return dictionary[key];
+            if (dictionary.ContainsKey(key))
+            {
+                return dictionary[key];
+            }
+            return default(T1);
         }
-        return default(T1);
     }
 }
